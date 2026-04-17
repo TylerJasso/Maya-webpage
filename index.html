@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maya Civilization Collapse</title>
+  <style>
+    :root{
+      /* Maya-inspired palette */
+      --bg: #f6efe2;          /* parchment */
+      --text: #2b241c;        /* dark cocoa */
+      --jade: #0f5b55;        /* jade/teal */
+      --obsidian: #151312;    /* near-black */
+      --gold: #caa24b;        /* warm gold */
+      --terracotta: #9b4a2f;  /* clay */
+      --card: rgba(255,255,255,0.92);
+      --shadow: 0 10px 22px rgba(0,0,0,0.14);
+    }
+
+    body {
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      background-image:
+        radial-gradient(closest-side, rgba(15,91,85,0.07), transparent 70%),
+        repeating-linear-gradient(
+          45deg,
+          rgba(202,162,75,0.10) 0px,
+          rgba(202,162,75,0.10) 8px,
+          rgba(155,74,47,0.07) 8px,
+          rgba(155,74,47,0.07) 16px
+        );
+      background-attachment: fixed;
+    }
+
+    header {
+      background:
+        radial-gradient(circle at 20% 10%, rgba(202,162,75,0.35), transparent 55%),
+        radial-gradient(circle at 80% 30%, rgba(155,74,47,0.28), transparent 60%),
+        linear-gradient(180deg, rgba(15,91,85,0.92), rgba(21,19,18,0.90));
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(21,19,18,0.70);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0;
+      border: 2px solid rgba(202,162,75,0.55);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+    }
+
+    nav {
+      background:
+        linear-gradient(90deg, rgba(15,91,85,0.96), rgba(9,50,47,0.96));
+      padding: 12px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 3px solid rgba(202,162,75,0.60);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      padding: 6px 0;
+      letter-spacing: 0.3px;
+    }
+    nav a:hover {
+      color: #fff7df;
+      text-shadow: 0 0 10px rgba(202,162,75,0.55);
+    }
+
+    section {
+      padding: 50px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--jade);
+      margin-bottom: 10px;
+      letter-spacing: 0.2px;
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+      border: 2px solid rgba(202,162,75,0.35);
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(21,19,18,0.10);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 6px;
+      width: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--terracotta), var(--gold));
+      opacity: 0.95;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 15px;
+    }
+
+    .image-grid figure {
+      margin: 0;
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    @media (max-width: 700px) {
+      section { padding: 28px 18px; }
+      .image-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 2.2rem; }
+    }
+
+    footer {
+      background:
+        linear-gradient(90deg, rgba(15,91,85,0.98), rgba(9,50,47,0.98));
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid rgba(202,162,75,0.60);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Why Did the Maya Civilization Collapse?</h1>
+  </header>
+
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#background">Background</a>
+    <a href="#drought">Drought</a>
+    <a href="#environment">Environment</a>
+    <a href="#warfare">Warfare</a>
+    <a href="#conclusion">Conclusion</a>
+    <a href="#works">Works Cited</a>
+  </nav>
+
+  <section id="intro">
+    <h2>Introduction</h2>
+    <div class="card">
+      <p>
+        The Maya civilization was one of the most advanced societies in the ancient world, known for its cities, mathematics, astronomy, and architecture.
+        However, between 800 and 900 CE, many major Maya cities were abandoned.
+      </p>
+      <p>
+        Many historians have debated the cause of this collapse for decades, but most modern research shows it was not one single event.
+        Instead, environmental stress, drought, and human activity all worked together to weaken Maya society until it could no longer survive.
+      </p>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2>Background</h2>
+    <div class="card">
+      <p>
+        The Maya civilization developed across Mesoamerica, containing present-day Mexico, Guatemala, Belize, and parts of Honduras and El Salvador.
+        They built impressive cities such as Tikal and Chichén Itzá, which served as centers of politics, religion, and trade.
+      </p>
+      <p>
+        Instead of being a single empire, the Maya were organized into independent city-states.
+        Each city had its own rulers and government, and while they sometimes worked together, they also competed for land and resources.
+      </p>
+      <p>
+        This structure encouraged cultural growth and innovation, but it also made the civilization more vulnerable during droughts, conflicts, and environmental change.
+      </p>
+      <div class="image-grid">
+        <figure>
+          <img class="image" src="assets/maya-region-map.png" alt="Map showing major regions and cities in the Maya area">
+          <figcaption class="caption">Map of the Maya region (major areas and cities).</figcaption>
+        </figure>
+        <figure>
+          <img class="image" src="assets/chichen-itza.png" alt="El Castillo pyramid at Chichén Itzá">
+          <figcaption class="caption">Chichén Itzá (El Castillo), one of the most famous Maya sites.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="drought">
+    <h2>Cause #1: Drought</h2>
+    <div class="card">
+      <p>
+        Severe droughts reduced water supply and caused crops to fail. Without reliable rainfall,
+        the Maya could not sustain their population, leading to famine and migration.
+      </p>
+      <p>
+        One of the strongest explanations for the Maya collapse is severe, recurring drought. Scientific evidence shows that rainfall in the region decreased significantly during the time of collapse, making it extremely difficult to grow crops.
+      </p>
+      <p>
+        Since the Maya depended heavily on agriculture, especially corn, even small changes in rainfall could lead to food shortages. As drought conditions persisted, cities struggled with famine, population decline, and migration away from urban centers.
+      </p>
+      <div class="image-grid">
+        <figure>
+          <img class="image" src="assets/drought-cracked-earth.png" alt="Cracked dry ground showing extreme drought conditions">
+          <figcaption class="caption">Cracked ground shows how severe drought can dry out the landscape.</figcaption>
+        </figure>
+        <figure>
+          <img class="image" src="assets/maya-drought-graph.png" alt="Graph showing changes in wet and dry conditions over time and the collapse of the Classic Maya civilization">
+          <figcaption class="caption">A climate record showing shifting wet/dry conditions around the time of Classic Maya collapse.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="environment">
+    <h2>Cause #2: Environmental Damage</h2>
+    <div class="card">
+      <p>
+        The Maya cut down forests for farming and building materials. This deforestation damaged
+        the soil and made drought conditions worse, reducing agricultural productivity.
+      </p>
+      <p>
+        Environmental damage also played a major role in weakening the Maya civilization. As populations grew, large areas of forest were cleared for farming, construction, and fuel.
+      </p>
+      <p>
+        This deforestation damaged the soil and reduced the land’s capacity to retain moisture, worsening drought conditions. According to NASA research, this combination of environmental stress and climate change created a feedback loop that intensified water shortages and reduced agricultural output.
+      </p>
+      <div class="image-grid">
+        <figure>
+          <img class="image" src="assets/maya-terrace-farming.png" alt="Illustration showing Maya terraced farming on hillsides">
+          <figcaption class="caption">Terraced farming is one way the Maya expanded agriculture.</figcaption>
+        </figure>
+        <figure>
+          <img class="image" src="assets/mesoamerica-climate-map.png" alt="Map of Mesoamerica showing climate or environmental zones">
+          <figcaption class="caption">The Maya lived across regions with different environmental conditions.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="warfare">
+    <h2>Cause #3: Warfare / Conflict</h2>
+    <div class="card">
+      <p>
+        Increased warfare between city-states weakened the Maya civilization. Conflicts over
+        resources and power made it harder for societies to survive during times of stress.
+      </p>
+      <p>
+        As resources became scarce, competition between Maya city-states increased. Archaeological evidence shows that warfare became more frequent during the period of collapse.
+      </p>
+      <p>
+        Struggles over land, water, and food supplies often drove these conflicts. Instead of uniting to solve shared problems, many city-states fought each other, weakening political stability and making recovery from drought and environmental stress even more difficult.
+      </p>
+      <div class="image-grid">
+        <figure>
+          <img class="image" src="assets/maya-city-aerial.png" alt="Aerial view of a Maya city surrounded by rainforest">
+          <figcaption class="caption">Large Maya cities depended on stable resources and political order.</figcaption>
+        </figure>
+        <figure>
+          <img class="image" src="assets/bonampak-mural.png" alt="Bonampak mural showing a scene of conflict and warriors">
+          <figcaption class="caption">Bonampak murals depict conflict and the role of warfare in Maya society.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+    <div class="card">
+      <p>
+        A single factor did not cause the collapse of the Maya civilization; rather, it was the result of a combination of environmental and human pressures.
+        Severe drought reduced food production, deforestation worsened environmental conditions, and warfare increased instability.
+      </p>
+      <p>
+        Together, these issues created a situation the Maya could not recover from. This history also serves as an important reminder today:
+        environmental change can have serious effects on even the most advanced societies.
+      </p>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2>Works Cited</h2>
+    <div class="card">
+      <p>
+        Douglas, Peter. “Drought, Agricultural Adaptation, and Sociopolitical Collapse in the Maya Lowlands.”
+        <em>Proceedings of the National Academy of Sciences of the United States of America</em>, U.S. National Library of Medicine,
+        20 Apr. 2015, <a href="https://pubmed.ncbi.nlm.nih.gov/25902508/">pubmed.ncbi.nlm.nih.gov/25902508/</a>.
+        <br><br>
+
+        Jarus, Owen. “Why Did the Maya Civilization Collapse?” <em>LiveScience</em>, Purch,
+        12 Sept. 2021, <a href="https://www.livescience.com/why-maya-civilization-collapsed.html">www.livescience.com/why-maya-civilization-collapsed.html</a>.
+        <br><br>
+
+        Kennett, Douglas J., et al. “Drought-Induced Civil Conflict among the Ancient Maya.”
+        <em>Nature News</em>, Nature Publishing Group, 19 July 2022,
+        <a href="https://www.nature.com/articles/s41467-022-31522-x">www.nature.com/articles/s41467-022-31522-x</a>.
+        <br><br>
+
+        “Mayan Deforestation and Drought.” <em>NASA</em>, NASA, 31 Jan. 2026,
+        <a href="https://science.nasa.gov/earth/earth-observatory/mayan-deforestation-and-drought-77060/">science.nasa.gov/earth/earth-observatory/mayan-deforestation-and-drought-77060/</a>.
+        <br><br>
+
+        Simon, Clea. “A Great Civilization Brought Low by Climate Change (and, No, It’s Not Us).”
+        <em>Harvard Gazette</em>, 28 Feb. 2020,
+        <a href="https://news.harvard.edu/gazette/story/2020/02/new-clues-about-how-and-why-the-maya-culture-collapsed/">news.harvard.edu/gazette/story/2020/02/new-clues-about-how-and-why-the-maya-culture-collapsed/</a>.
+        <br><br>
+
+        Stromberg, Joesph. “Why Did the Mayan Civilization Collapse? A New Study Points to Deforestation and Climate Change.”
+        <em>Smithsonian Magazine</em>, 23 Aug. 2012,
+        <a href="https://www.smithsonianmag.com/science-nature/why-did-the-mayan-civilization-collapse-a-new-study-points-to-deforestation-and-climate-change-30863026/">www.smithsonianmag.com/science-nature/why-did-the-mayan-civilization-collapse-a-new-study-points-to-deforestation-and-climate-change-30863026/</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Multimodal Argument Project | Maya Civilization Collapse</p>
+  </footer>
+</body>
+</html>
